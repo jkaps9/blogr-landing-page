@@ -30,10 +30,11 @@ body {
   font-family: 'Overpass', sans-serif;
   font-size: 16px;
   font-weight: 300;
+  color: var(--neutral-very-dark-grayish-blue-body-copy);
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 a {
@@ -175,6 +176,28 @@ ul {
   gap: 10px;
 }
 
+/* Designed for the future */
+.designed-for-the-future {
+  margin: 4rem auto;
+  max-width: 1100px;
+}
+
+.designed-for-the-future__title {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.designed-for-the-future__subtitle {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.designed-for-the-future__content {
+  line-height: 1.8;
+}
 
 /* - Mobile: 375px
 - Desktop: 1440px */
