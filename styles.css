@@ -210,9 +210,15 @@ ul {
     .content-container {
       display: flex;
       gap: 50px;
+      margin-top: 2.5rem;
     }
     .text {
       width: 60%;
+    }
+
+    .title {
+      margin-bottom: 0;
+      font-size: 3rem;
     }
 
     .content {
@@ -221,7 +227,7 @@ ul {
 
     img {
       width: 40%;
-      transform: scale(200%) translateX(25%);
+      transform: translateX(50%) scale(175%);
     }
   }
 }
