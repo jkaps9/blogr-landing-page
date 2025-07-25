@@ -27,7 +27,7 @@
 
 /* Base Styling */
 body {
-  font-family: 'Overpass', sans-serif;
+  font-family: "Overpass", sans-serif;
   font-size: 16px;
   font-weight: 300;
   color: var(--neutral-very-dark-grayish-blue-body-copy);
@@ -56,7 +56,7 @@ ul {
   border: 1px solid transparent;
   width: 8rem;
   text-align: center;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   font-size: 0.9rem;
   cursor: pointer;
@@ -80,9 +80,11 @@ ul {
 
 /* Navbar */
 .header {
-  background: linear-gradient(135deg,
+  background: linear-gradient(
+      135deg,
       var(--gradient-very-light-red),
-      var(--gradient-light-red)),
+      var(--gradient-light-red)
+    ),
     url("./images/bg-pattern-intro-desktop.svg");
   background-size: 100%, 150%;
   background-position: center, left;
@@ -114,7 +116,7 @@ ul {
   justify-content: center;
   gap: 30px;
 
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 0.9rem;
   font-weight: 500;
 }
@@ -127,7 +129,6 @@ ul {
 .navbar__menu-list-item a:hover {
   text-decoration: underline;
   font-weight: 700;
-
 }
 
 .navbar__menu-list-item--arrow {
@@ -178,8 +179,10 @@ ul {
 
 /* Designed for the future */
 .designed-for-the-future {
-  margin: 4rem auto;
-  max-width: 1100px;
+  .content {
+    margin: 4rem auto;
+    max-width: 1100px;
+  }
 }
 
 .designed-for-the-future__title {
@@ -201,3 +204,25 @@ ul {
 
 /* - Mobile: 375px
 - Desktop: 1440px */
+
+@media (min-width: 1000px) {
+  .designed-for-the-future {
+    margin: 12rem 0;
+    .content {
+      display: flex;
+      gap: 50px;
+    }
+    .designed-for-the-future__text {
+      width: 60%;
+    }
+
+    .designed-for-the-future__content {
+      max-width: 50ch;
+    }
+
+    img {
+      width: 40%;
+      transform: scale(200%) translateX(25%);
+    }
+  }
+}
