@@ -208,7 +208,7 @@ section {
         var(--very-dark-desaturated-blue)
       ),
       url("./images/bg-pattern-circles.svg");
-    background-size: 100%, 150%;
+    background-size: 100%, 125%;
     background-position: center, left;
     border-bottom-left-radius: 100px;
     border-top-right-radius: 100px;
