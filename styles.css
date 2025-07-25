@@ -243,17 +243,30 @@ section {
 
 @media (min-width: 1000px) {
   section {
-    margin: 12rem 0;
+    margin: 12rem 0 0;
+
+    &.designed-for-the-future {
+      margin-top: 8rem;
+    }
+
+    &.features {
+      margin-top: 20rem;
+    }
 
     .content-container {
       display: flex;
+      flex-direction: row-reverse;
       align-items: center;
       gap: 50px;
       margin-top: 2.5rem;
       margin-top: 2.5rem;
     }
 
-    &.designed-for-the-future .text {
+    &.features .content-container {
+      flex-direction: row;
+    }
+
+    .text {
       width: 60%;
     }
 
@@ -273,6 +286,11 @@ section {
     &.designed-for-the-future img {
       width: 40%;
       transform: translateX(50%) scale(175%);
+    }
+
+    &.features img {
+      width: 40%;
+      transform: translateX(-50%) scale(150%);
     }
 
     &.infrastructure {
