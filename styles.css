@@ -257,13 +257,14 @@ section {
     }
 
     &.infrastructure {
-      padding: 8rem 0;
+      padding: 6rem 0;
       position: relative;
       place-items: center;
 
       img {
         position: absolute;
-        top: -15%;
+        top: -20%;
+        left: 7%;
       }
 
       .text {
