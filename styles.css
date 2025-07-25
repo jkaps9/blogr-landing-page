@@ -179,6 +179,7 @@ ul {
 /* Section */
 section {
   width: 100%;
+  margin: 6rem 0;
   .content-container {
     margin: 4rem auto;
     max-width: 1100px;
@@ -199,6 +200,17 @@ section {
 
   .content {
     line-height: 1.8;
+  }
+
+  .text {
+    padding: 0 2rem;
+    text-align: center;
+  }
+
+  img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
   }
 
   &.infrastructure {
