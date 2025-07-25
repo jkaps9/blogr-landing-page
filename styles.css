@@ -108,7 +108,6 @@ ul {
   align-items: center;
   max-width: 1100px;
   padding: 2rem;
-  background-image: url("./images/bg-pattern-intro-desktop.svg");
 }
 
 .navbar__menu-list {
@@ -177,12 +176,14 @@ ul {
   gap: 10px;
 }
 
-/* Designed for the future */
-.designed-for-the-future {
+/* Section */
+section {
+  width: 100%;
   .content-container {
     margin: 4rem auto;
     max-width: 1100px;
   }
+
   .title {
     text-align: center;
     margin-bottom: 4rem;
@@ -199,20 +200,60 @@ ul {
   .content {
     line-height: 1.8;
   }
+
+  &.infrastructure {
+    padding: 20rem 0 6rem;
+    position: relative;
+    place-items: center;
+
+    background: linear-gradient(
+        135deg,
+        var(--gradient-very-dark-gray-blue),
+        var(--very-dark-desaturated-blue)
+      ),
+      url("./images/bg-pattern-circles.svg");
+    background-size: 100%, 125%;
+    background-position: center, left;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+
+    img {
+      position: absolute;
+      top: -20%;
+    }
+
+    .text {
+      color: var(--neutral-white-text);
+      text-align: center;
+      .title {
+        margin-bottom: 1rem;
+      }
+      .text-content {
+        place-items: center;
+      }
+      .content {
+        max-width: 30ch;
+      }
+    }
+  }
 }
 
 /* - Mobile: 375px
 - Desktop: 1440px */
 
 @media (min-width: 1000px) {
-  .designed-for-the-future {
+  section {
     margin: 12rem 0;
+
     .content-container {
       display: flex;
+      align-items: center;
       gap: 50px;
       margin-top: 2.5rem;
+      margin-top: 2.5rem;
     }
-    .text {
+
+    &.designed-for-the-future .text {
       width: 60%;
     }
 
@@ -221,13 +262,50 @@ ul {
       font-size: 3rem;
     }
 
+    &.infrastructure .title {
+      font-size: 2rem;
+    }
+
     .content {
       max-width: 50ch;
     }
 
-    img {
+    &.designed-for-the-future img {
       width: 40%;
       transform: translateX(50%) scale(175%);
+    }
+
+    &.infrastructure {
+      padding: 6rem 0;
+      position: relative;
+      place-items: center;
+
+      img {
+        position: absolute;
+        top: -20%;
+        left: 7%;
+      }
+
+      .text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        text-align: start;
+        max-width: 1100px;
+
+        .text-content {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1rem;
+
+          .content {
+            max-width: 57ch;
+          }
+        }
+      }
     }
   }
 }
