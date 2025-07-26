@@ -118,6 +118,11 @@ ul {
   display: none;
 }
 
+.hamburger {
+  display: block;
+  grid-column-start: 3;
+}
+
 .inner-header {
   width: 100%;
   max-width: 1100px;
@@ -298,6 +303,10 @@ footer {
     }
 
     .navbar__menu-sublist {
+      display: none;
+    }
+
+    .hamburger {
       display: none;
     }
 
