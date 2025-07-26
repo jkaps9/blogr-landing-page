@@ -325,12 +325,12 @@ footer {
 
     &.designed-for-the-future img {
       width: 40%;
-      transform: translateX(50%) scale(175%);
+      transform: translateX(50%) scale(190%);
     }
 
     &.features img {
       width: 40%;
-      transform: translateX(-50%) scale(150%);
+      transform: translateX(-50%) scale(190%);
     }
 
     &.infrastructure {
