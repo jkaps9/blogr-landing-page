@@ -179,7 +179,7 @@ ul {
 /* Section */
 section {
   width: 100%;
-  margin: 6rem 0;
+  margin: 6rem 0 0;
   .content-container {
     margin: 4rem auto;
     max-width: 1100px;
@@ -214,30 +214,28 @@ section {
   }
 
   &.infrastructure {
-    margin-top: 12rem;
-    padding: 16rem 0 6rem;
-    position: relative;
+    padding-bottom: 2rem;
     place-items: center;
 
-    background: linear-gradient(
-        135deg,
-        var(--gradient-very-dark-gray-blue),
-        var(--very-dark-desaturated-blue)
-      ),
-      url("./images/bg-pattern-circles.svg");
-    background-size: 100%, 125%;
-    background-position: center, left;
-    border-bottom-left-radius: 100px;
-    border-top-right-radius: 100px;
-
     img {
-      position: absolute;
-      top: -20%;
-      left: 0;
-      right: 0;
+      transform: translateY(50%);
     }
 
     .text {
+      background: url("./images/bg-pattern-circles.svg"),
+        linear-gradient(
+          135deg,
+          var(--gradient-very-dark-gray-blue),
+          var(--very-dark-desaturated-blue)
+        );
+
+      background-size: 150%, 100%;
+      background-position: top 300% center, center;
+      background-repeat: no-repeat;
+      border-bottom-left-radius: 100px;
+      border-top-right-radius: 100px;
+
+      padding: 14rem 0 4rem;
       color: var(--neutral-white-text);
       text-align: center;
       .title {
@@ -293,24 +291,23 @@ footer {
     }
 
     &.features {
-      margin-top: 20rem;
+      margin-bottom: 12rem;
     }
 
     .content-container {
       display: flex;
-      flex-direction: row-reverse;
       align-items: center;
       gap: 50px;
       margin-top: 2.5rem;
-      margin-top: 2.5rem;
     }
 
-    &.features .content-container {
-      flex-direction: row;
+    &.designed-for-the-future .content-container {
+      flex-direction: row-reverse;
     }
 
     .text {
       width: 60%;
+      text-align: start;
     }
 
     .title {
@@ -338,15 +335,7 @@ footer {
 
     &.infrastructure {
       padding: 6rem 0;
-      position: relative;
       place-items: center;
-
-      img {
-        position: absolute;
-        top: -20%;
-        left: 7%;
-        right: auto;
-      }
 
       .text {
         width: 100%;
