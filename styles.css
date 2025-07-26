@@ -345,6 +345,7 @@ footer {
         position: absolute;
         top: -20%;
         left: 7%;
+        right: auto;
       }
 
       .text {
