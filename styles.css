@@ -51,7 +51,7 @@ ul {
 .btn {
   background: #fff;
   color: var(--primary-light-red-CTA-text);
-  padding: 0.5rem 0.5rem;
+  padding: 1rem 0.5rem;
   border-radius: 2rem;
   border: 1px solid transparent;
   width: 8rem;
@@ -111,41 +111,11 @@ ul {
 }
 
 .navbar__menu-list {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-
-  font-family: "Ubuntu", sans-serif;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-.navbar__menu-list-item a {
-  display: flex;
-  align-items: flex-end;
-}
-
-.navbar__menu-list-item a:hover {
-  text-decoration: underline;
-  font-weight: 700;
-}
-
-.navbar__menu-list-item--arrow {
-  margin-left: 0.4em;
-  margin-bottom: 0.2em;
-  width: 0.6em;
-  height: 0.4em;
-}
-
-.navbar__menu-sublist {
   display: none;
 }
 
 .navbar__button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
+  display: none;
 }
 
 .inner-header {
@@ -157,6 +127,8 @@ ul {
   align-items: center;
   gap: 20px;
   margin-top: 4rem;
+  padding: 0 2.5rem;
+  text-align: center;
 }
 
 .navbar__logo img {
@@ -166,8 +138,12 @@ ul {
 }
 
 .inner-header__title {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 600;
+}
+
+.inner-header__tagline {
+  font-size: 1.1rem;
 }
 
 .inner-header__button-container {
@@ -286,6 +262,58 @@ footer {
 - Desktop: 1440px */
 
 @media (min-width: 1000px) {
+  header {
+    .navbar__button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .navbar__menu-list {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+
+      font-family: "Ubuntu", sans-serif;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .navbar__menu-list-item a {
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .navbar__menu-list-item a:hover {
+      text-decoration: underline;
+      font-weight: 700;
+    }
+
+    .navbar__menu-list-item--arrow {
+      margin-left: 0.4em;
+      margin-bottom: 0.2em;
+      width: 0.6em;
+      height: 0.4em;
+    }
+
+    .navbar__menu-sublist {
+      display: none;
+    }
+
+    .inner-header {
+      padding: 0;
+    }
+
+    .inner-header__title {
+      font-size: 3rem;
+    }
+
+    .inner-header__tagline {
+      font-size: 1rem;
+    }
+  }
+
   section {
     margin: 12rem 0 0;
 
