@@ -31,6 +31,7 @@ body {
   font-size: 16px;
   font-weight: 300;
   color: var(--neutral-very-dark-grayish-blue-body-copy);
+  overflow: hidden;
 }
 
 img {
