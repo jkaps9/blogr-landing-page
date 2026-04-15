@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -79,9 +79,10 @@
           <a href="#" class="navbar__button">Login</a>
           <a href="#" class="navbar__button btn">Sign Up</a>
         </div>
-        <div class="hamburger">
-          <img src="./images/icon-hamburger.svg" alt="" />
-        </div>
+        <button class="hamburger" id="navToggle">
+          <img src="./images/icon-hamburger.svg" alt="" class="open" />
+          <img src="./images/icon-close.svg" alt="" class="close" />
+        </button>
       </nav>
 
       <div class="inner-header">
@@ -205,5 +206,18 @@
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
     </footer>
+
+    <script>
+      const navToggle = document.getElementById("navToggle");
+      const navMenu = document.querySelector(".navbar__menu-list");
+      if (navToggle) {
+        navToggle.addEventListener("click", () => {
+          navToggle.classList.toggle("active");
+          if (navMenu) {
+            navMenu.classList.toggle("visible");
+          }
+        });
+      }
+    </script>
   </body>
 </html>
