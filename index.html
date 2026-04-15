@@ -24,60 +24,85 @@
         <a href="index.html" class="navbar__logo"
           ><img src="./images/logo.svg" alt=""
         /></a>
-        <ul class="navbar__menu-list">
-          <li class="navbar__menu-list-item">
-            <a href="#"
-              >Product<img
-                src="./images/icon-arrow-light.svg"
-                alt=""
-                class="navbar__menu-list-item--arrow"
-            /></a>
-            <ul class="navbar__menu-sublist">
-              <li class="navbar__menu-sublist-item"><a href="">Overview</a></li>
-              <li class="navbar__menu-sublist-item"><a href="">Pricing</a></li>
-              <li class="navbar__menu-sublist-item">
-                <a href="">Marketplace</a>
-              </li>
-              <li class="navbar__menu-sublist-item"><a href="">Features</a></li>
-              <li class="navbar__menu-sublist-item">
-                <a href="">Integrations</a>
-              </li>
-            </ul>
-          </li>
-          <li class="navbar__menu-list-item">
-            <a href="#"
-              >Company<img
-                src="./images/icon-arrow-light.svg"
-                alt=""
-                class="navbar__menu-list-item--arrow"
-            /></a>
-            <ul class="navbar__menu-sublist">
-              <li class="navbar__menu-sublist-item">About</li>
-              <li class="navbar__menu-sublist-item">Team</li>
-              <li class="navbar__menu-sublist-item">Blog</li>
-              <li class="navbar__menu-sublist-item">Careers</li>
-            </ul>
-          </li>
-          <li class="navbar__menu-list-item">
-            <a href="#"
-              >Connect<img
-                src="./images/icon-arrow-light.svg"
-                alt=""
-                class="navbar__menu-list-item--arrow"
-            /></a>
-            <ul class="navbar__menu-sublist">
-              <li class="navbar__menu-sublist-item"><a href="">Contact</a></li>
-              <li class="navbar__menu-sublist-item">
-                <a href="">Newsletter</a>
-              </li>
-              <li class="navbar__menu-sublist-item"><a href="">LinkedIn</a></li>
-            </ul>
-          </li>
-        </ul>
+        <div class="navbar__menu">
+          <ul class="navbar__menu-list">
+            <li class="navbar__menu-list-item">
+              <a href="#"
+                >Product<img
+                  src="./images/icon-arrow-light.svg"
+                  alt=""
+                  class="navbar__menu-list-item--arrow arrow-light" />
+                <img
+                  src="./images/icon-arrow-dark.svg"
+                  alt=""
+                  class="navbar__menu-list-item--arrow arrow-dark"
+              /></a>
 
-        <div class="navbar__button-container">
-          <a href="#" class="navbar__button">Login</a>
-          <a href="#" class="navbar__button btn">Sign Up</a>
+              <ul class="navbar__menu-sublist">
+                <li class="navbar__menu-sublist-item">
+                  <a href="">Overview</a>
+                </li>
+                <li class="navbar__menu-sublist-item">
+                  <a href="">Pricing</a>
+                </li>
+                <li class="navbar__menu-sublist-item">
+                  <a href="">Marketplace</a>
+                </li>
+                <li class="navbar__menu-sublist-item">
+                  <a href="">Features</a>
+                </li>
+                <li class="navbar__menu-sublist-item">
+                  <a href="">Integrations</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar__menu-list-item">
+              <a href="#"
+                >Company<img
+                  src="./images/icon-arrow-light.svg"
+                  alt=""
+                  class="navbar__menu-list-item--arrow arrow-light" />
+                <img
+                  src="./images/icon-arrow-dark.svg"
+                  alt=""
+                  class="navbar__menu-list-item--arrow arrow-dark"
+              /></a>
+              <ul class="navbar__menu-sublist">
+                <li class="navbar__menu-sublist-item">About</li>
+                <li class="navbar__menu-sublist-item">Team</li>
+                <li class="navbar__menu-sublist-item">Blog</li>
+                <li class="navbar__menu-sublist-item">Careers</li>
+              </ul>
+            </li>
+            <li class="navbar__menu-list-item">
+              <a href="#"
+                >Connect<img
+                  src="./images/icon-arrow-light.svg"
+                  alt=""
+                  class="navbar__menu-list-item--arrow arrow-light" />
+                <img
+                  src="./images/icon-arrow-dark.svg"
+                  alt=""
+                  class="navbar__menu-list-item--arrow arrow-dark"
+              /></a>
+              <ul class="navbar__menu-sublist">
+                <li class="navbar__menu-sublist-item">
+                  <a href="">Contact</a>
+                </li>
+                <li class="navbar__menu-sublist-item">
+                  <a href="">Newsletter</a>
+                </li>
+                <li class="navbar__menu-sublist-item">
+                  <a href="">LinkedIn</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="navbar__button-container">
+            <a href="#" class="navbar__button">Login</a>
+            <a href="#" class="navbar__button btn">Sign Up</a>
+          </div>
         </div>
         <button class="hamburger" id="navToggle">
           <img src="./images/icon-hamburger.svg" alt="" class="open" />
@@ -209,7 +234,7 @@
 
     <script>
       const navToggle = document.getElementById("navToggle");
-      const navMenu = document.querySelector(".navbar__menu-list");
+      const navMenu = document.querySelector(".navbar__menu");
       if (navToggle) {
         navToggle.addEventListener("click", () => {
           navToggle.classList.toggle("active");

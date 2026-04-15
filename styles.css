@@ -126,6 +126,7 @@ ul {
 .navbar__menu-list-item a {
   display: flex;
   align-items: flex-end;
+  gap: 1rem;
 }
 
 .navbar__menu-list-item a:hover {
@@ -138,6 +139,10 @@ ul {
   margin-bottom: 0.2em;
   width: 0.6em;
   height: 0.4em;
+}
+
+.arrow-dark {
+  display: none;
 }
 
 .navbar__menu-sublist {
@@ -486,13 +491,59 @@ footer {
     position: relative;
   }
 
-  .navbar__menu-list.visible {
-    display: flex;
+  .navbar__menu.visible {
+    align-items: center;
+    background: #fff;
+    border-radius: 5px;
 
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 1.5rem;
     position: absolute;
     top: 100%;
     left: 2rem; /*same as navbar padding*/
     right: 2rem; /*same as navbar padding*/
     z-index: 900;
+
+    .navbar__menu-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .navbar__button-container {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      padding-top: 1.5rem;
+
+      .navbar__button {
+        color: #1f3e5a;
+        font-family: "Ubuntu";
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.15;
+      }
+
+      .btn {
+        background: linear-gradient(135deg, #ff8f71 0%, #ff3e55 100%);
+        color: var(--neutral-white-text);
+      }
+    }
+  }
+
+  .navbar__menu-list-item a {
+    color: #1f3e5a;
+  }
+
+  .arrow-light {
+    display: none;
+  }
+
+  .arrow-dark {
+    display: block;
   }
 }
